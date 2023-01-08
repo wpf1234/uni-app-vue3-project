@@ -1,0 +1,105 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 844px;
+  background: linear-gradient(
+    to top,
+    rgb(161, 255, 206),
+    rgb(250, 255, 209)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text {
+  opacity: 0;
+  position: fixed;
+  top: 150px;
+  font-family: poster;
+  font-size: 26px;
+  color: #703cee;
+
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 0.5s;
+}
+
+svg {
+  padding-top: 180px;
+  transform: scaleY(0.9);
+}
+.chat-frame1 {
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity1 forwards;
+}
+
+.circle1 {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 1s;
+}
+
+.content1 path:nth-child(1) {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 2s;
+}
+
+.content1 path:nth-child(2) {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 1.5s;
+}
+
+.chat-frame2 {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 4s;
+}
+
+.circle2 {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 5s;
+}
+
+.content2 path:nth-child(1) {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 6s;
+}
+
+.content2 path:nth-child(2) {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 1s linear opacity2 forwards 5.5s;
+}
+
+@keyframes opacity1 {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+
+@keyframes opacity2 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

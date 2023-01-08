@@ -1,0 +1,28 @@
+div.data-v-432a68bf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 844px;
+  background: linear-gradient(
+    to bottom,
+    rgb(101, 78, 163),
+    rgb(234, 175, 200)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.text.data-v-432a68bf {
+  position: fixed;
+  top: 320px;
+  font-family: romance;
+  font-size: 20px;
+  color: #7ac4e1;
+}
+.eat.data-v-432a68bf {
+  display: flex;
+  margin-top: -450px;
+  transform: scale(0.94, 0.76);
+}
+.walk.data-v-432a68bf {
+  display: flex;
+  margin-top: 260px;
+  transform: scale(0.95, 0.71);
+}

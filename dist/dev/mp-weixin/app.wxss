@@ -1,0 +1,13 @@
+
+/*每个页面公共css */
+
+@font-face {
+  font-family: 'poster';
+  src: url('assets/海报奶酪字体.86fbea49.ttf');
+}
+
+@font-face {
+  font-family: 'romance';
+  src: url('assets/浪漫情书字体.f5a8c19e.ttf');
+}
+page{--status-bar-height:25px;--top-window-height:0px;--window-top:0px;--window-bottom:0px;--window-left:0px;--window-right:0px;--window-magin:0px}[data-c-h="true"]{display: none !important;}
