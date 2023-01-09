@@ -3,11 +3,11 @@ div {
   align-items: center;
   justify-content: center;
   height: 844px;
-  background: linear-gradient(
-    to top,
-    rgb(161, 255, 206),
-    rgb(250, 255, 209)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(180deg, rgba(238, 242, 243, 0) 0%, #8e9eab 78.23%);
+  background-blend-mode: darken;
 }
 
 .text {
@@ -20,7 +20,7 @@ div {
 
   transform-box: fill-box;
   transform-origin: 40% bottom;
-  animation: 1s linear opacity2 forwards 0.5s;
+  animation: 5s linear opacity2 forwards 0.5s;
 }
 
 svg {
@@ -92,14 +92,5 @@ svg {
 @keyframes opacity2 {
   to {
     opacity: 1;
-  }
-}
-
-@keyframes bounce {
-  from {
-    transform: translateY(-2px);
-  }
-  to {
-    transform: translateY(0px);
   }
 }

@@ -141,7 +141,7 @@
 <script>
 import { onBeforeMount, onMounted } from 'vue'
 export default {
-  name: 'FirstTime',
+  name: 'FirstChat',
   props: [],
   setup() {
     onBeforeMount(() => {})
@@ -157,27 +157,27 @@ export default {
       },
       content: `2022年9月6日
       我们第一次聊天
-      朴实无华
+      内容不多也很简单
       (7号是你的生日，今年我陪你过)`,
     }
   },
   methods: {
     start(e) {
-      console.log('开始下滑坐标', e.changedTouches[0].clientY)
+      // console.log('开始下滑坐标', e.changedTouches[0].clientY)
       this.startData.clientX = e.changedTouches[0].clientX
       this.startData.clientY = e.changedTouches[0].clientY
     },
     end(e) {
-      console.log('结束下滑坐标', e.changedTouches[0].clientY)
+      // console.log('结束下滑坐标', e.changedTouches[0].clientY)
       const subX = e.changedTouches[0].clientX - this.startData.clientX
       const subY = e.changedTouches[0].clientY - this.startData.clientY
       if (subY < -50) {
-        console.log('下滑')
+        // console.log('下滑')
         uni.navigateTo({
           url: '../metting/Meet',
         })
       } else if (subY > 50) {
-        console.log('上滑')
+        // console.log('上滑')
         uni.navigateTo({
           url: '../index/index',
         })

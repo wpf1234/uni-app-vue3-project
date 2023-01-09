@@ -3,18 +3,17 @@ div {
   align-items: center;
   justify-content: center;
   height: 844px;
-  background: linear-gradient(
-    to bottom,
-    rgb(101, 78, 163),
-    rgb(234, 175, 200)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #654ea3 62.54%, rgba(234, 175, 200, 0) 100%);
+  background-blend-mode: darken;
 }
 
 .text {
   position: fixed;
   top: 320px;
   font-family: romance;
-  font-size: 20px;
+  font-size: 24px;
   color: #7ac4e1;
 }
 
@@ -28,4 +27,85 @@ div {
   display: flex;
   margin-top: 260px;
   transform: scale(0.95, 0.71);
+}
+
+.light path:nth-child(1) {
+  animation: change 2s ease forwards;
+}
+
+.light path:nth-child(2) {
+  animation: change 2s ease forwards;
+}
+
+.light path:nth-child(3) {
+  animation: change 2s ease forwards;
+}
+
+.foot {
+  animation: 1.5s linear swing alternate infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.chopsticks {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: 1s linear bounce alternate infinite;
+}
+
+.hand {
+  transform-box: fill-box;
+  transform-origin: 0 3px;
+  animation: 1s linear bounce alternate infinite;
+}
+
+.tree {
+  animation: 2s linear 1s tree alternate infinite;
+}
+
+.snow circle {
+  animation: 5s linear fall-down infinite;
+}
+
+@keyframes change {
+  to {
+    fill: #ffd700;
+  }
+}
+
+@keyframes swing {
+  from {
+    transform: rotate(-10deg) translateX(3px);
+  }
+  to {
+    transform: rotate(10deg) translateX(-3px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-3px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes tree {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fall-down {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(120px);
+    opacity: 0.2;
+  }
 }

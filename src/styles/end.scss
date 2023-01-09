@@ -1,0 +1,73 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 844px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #d94646 48.44%, rgba(243, 50, 50, 0) 100%);
+}
+
+.text {
+  opacity: 0;
+  position: fixed;
+  top: 120px;
+  font-family: poster;
+  font-size: 30px;
+  color: #7ac4e1;
+
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: 2s linear display1 forwards;
+}
+
+svg {
+  padding-top: 180px;
+}
+
+.firewoks path,
+.firewoks polygon {
+  transform-box: fill-box;
+  transform-origin: 40% bottom;
+  animation: firewoks 2s linear infinite;
+}
+
+.hand {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: 2s linear swing alternate infinite;
+}
+
+@keyframes fireworks {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(0.4);
+    opacity: 0.4;
+  }
+  70% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  from {
+    transform: rotate(-8deg) translateX(1.5px);
+  }
+  to {
+    transform: rotate(8deg) translateX(-1.5px);
+  }
+}
+
+@keyframes display1 {
+  to {
+    opacity: 1;
+  }
+}

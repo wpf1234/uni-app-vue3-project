@@ -21,6 +21,27 @@
         "navigationBarTitleText": "meet",
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path": "pages/eating/Eat",
+      "style": {
+        "navigationBarTitleText": "eat",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/story/Story",
+      "style": {
+        "navigationBarTitleText": "story",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/ending/End",
+      "style": {
+        "navigationBarTitleText": "end",
+        "navigationStyle": "custom"
+      }
     }
   ],
   "globalStyle": {
